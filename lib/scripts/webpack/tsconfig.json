@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": false,
+    "alwaysStrict": true,
+    "allowJs": true,
+    "jsx": "react",
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es6", "dom"
+    ],
+    "paths": {
+      "model": ["src/model"],
+      "HTTPAPI": ["src/HTTPAPI"],
+      "container": ["src/container"],
+      "Basic": ["src/components/Basic"],
+      "queries": ["src/queries"],
+      "commands": ["src/commands"],
+      "transitions": ["src/transitions"],
+      "*": [
+        "src/components/Basic/*",
+        "src/components/*",
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "test/template-app"
+  ]
+}
